@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Blog</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: grid;
+      grid-template-areas:
+        "header"
+        "main"
+        "footer";
+      grid-template-rows: auto 1fr auto;
+      min-height: 100vh;
+    }
+
+    header {
+      grid-area: header;
+      background-color: #fc95ee;
+      color: black;
+      text-align: center;
+    }
+
+    main {
+      grid-area: main;
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    .sidebar {
+      background-color: #ecf0f1;
+      padding: 15px;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      padding: 10px;
+    }
+
+    article {
+      background-color: #fdfefe;
+      border: 1px solid #d5d8dc;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .date {
+      color: #7f8c8d;
+      font-size: 0.85em;
+    }
+
+    footer {
+      grid-area: footer;
+      background-color: #fc95ee;
+      color: black;
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #2980b9;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>BlogSphere</h1>
+  </header>
+
+  <main>
+    <div class="sidebar">
+      <h3>Recent Posts</h3>
+      <ul>
+        <li><a href="#">Manali Adventures</a></li>
+        <li><a href="#">Rajasthan Colors</a></li>
+        <li><a href="#">Darjeeling Views</a></li>
+        <li><a href="#">Shillong Trails</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <article>
+        <h2>Explore the Charm of Manali</h2>
+        <p class="date">May 16, 2025</p>
+        <p>Surrounded by snow-capped mountains and lush forests, Manali is a perfect retreat for nature lovers and adventure seekers. Whether it’s paragliding in Solang Valley or soaking in the hot springs of Vashisht, every moment feels magical.</p>
+      </article>
+
+      <article>
+        <h2>Rajasthan – A Land of Royal Heritage</h2>
+        <p class="date">May 15, 2025</p>
+        <p>From the majestic forts of Jaipur to the golden sands of Jaisalmer, Rajasthan captures India's regal essence. Experience camel rides, vibrant folk dances, and centuries-old palaces that echo tales of valor and beauty.</p>
+      </article>
+
+      <article>
+        <h2>Darjeeling – Queen of the Hills</h2>
+        <p class="date">May 14, 2025</p>
+        <p>Famous for its tea gardens and the panoramic views of Mt. Kanchenjunga, Darjeeling is a hill station with soul. The toy train, monasteries, and misty mornings offer a peaceful escape from city chaos.</p>
+      </article>
+
+      <article>
+        <h2>Shillong – Scotland of the East</h2>
+        <p class="date">May 13, 2025</p>
+        <p>Shillong boasts rolling hills, crystal-clear waterfalls, and a thriving music scene. The blend of modern culture and tribal traditions makes this North-Eastern gem truly unforgettable.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 BlogSphere</p>
+  </footer>
+
+</body>
+</html>
