@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Height Demo</title>
+  <style>
+    .box1, .box2, .box3 {
+      width: 200px;
+      margin-bottom: 10px;
+      color: white;
+      padding: 10px;
+    }
+
+    .box1 {
+      height: 100px;
+      background-color: red;
+    }
+
+    .box2 {
+      min-height: 100px;
+      background-color: green;
+    }
+
+    .box3 {
+      max-height: 100px;
+      background-color: blue;
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">Fixed Height: 100px</div>
+  <div class="box2">Min Height: 100px. This will grow if content increases.</div>
+  <div class="box3">Max Height: 100px. Add a lot of content here to see scroll behavior. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</div>
+</body>
+</html>

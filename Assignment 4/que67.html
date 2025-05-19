@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Border Radius Example</title>
+</head>
+<body>
+  <div class="box radius-all">All Corners Rounded</div>
+  <div class="box radius-top-left">Top-Left Rounded</div>
+  <div class="box radius-different-corners">Different Corners</div>
+  <div class="box radius-circle">Circle</div>
+</body>
+</html>
+  <style>
+    .box {
+      width: 200px;
+      height: 200px;
+      background-color: #ff9e3d;
+      margin: 20px;
+      display: inline-block;
+    }
+
+    .radius-all {
+      border-radius: 20px;
+    }
+
+    .radius-top-left {
+      border-radius: 30px 0 0 0;
+    }
+
+    .radius-different-corners {
+      border-radius: 10px 40px 60px 90px; /* top-left, top-right, bottom-right, bottom-left */
+    }
+
+    .radius-circle {
+      border-radius: 50%;
+    }
+  </style>
