@@ -1,0 +1,13 @@
+<div style="width: 400px; height: 400px; background-color: gray;">
+</div>
+
+<p>Move your mouse inside the gray box.</p>
+
+<script>
+  
+  document.querySelector('div').addEventListener('mousemove', function(event) {
+        const x = event.offsetX;
+        const y = event.offsetY;
+       document.querySelector('p').innerText = `X: ${x}, Y: ${y}`;
+    });
+</script>

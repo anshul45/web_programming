@@ -1,0 +1,13 @@
+<input type="text" id="input">
+
+<p id="x1">Uppercase: </p>
+<p id="x2">Lowercase: </p>
+
+<script>
+
+ document.getElementById('input').addEventListener('keyup', function() {
+        const value = document.getElementById('input').value;
+        document.getElementById('x1').innerText = 'Uppercase: ' + value.toUpperCase();
+        document.getElementById('x2').innerText = 'Lowercase: ' + value.toLowerCase();
+    });
+</script>
